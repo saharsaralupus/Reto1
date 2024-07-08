@@ -164,5 +164,40 @@ footer .container{
         padding-right: 20px;
     }
 
+    #hero h1{
+        font-size: 5em;
+    }
+
+    #soy-aprendiz- .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #soy-aprendiz- .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    #soy-aprendiz- h2{
+        margin-top: 0px;
+    }
+
+    #soy-aprendiz- .img-container{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+            ), url("https://images.pexels.com/photos/879109/pexels-photo-879109.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+        background-size: cover;
+        background-position: center center;
+        height: 600px;
+        width: 500px;
+    }
 
 }
