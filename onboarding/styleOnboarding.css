@@ -1,0 +1,333 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+h1{font-size: 3em;}
+h2{font-size: 2em;}
+h3{font-size: 1.7em;}
+p{font-size: 1.2em;}
+ul{list-style: none;}
+li{font-size: 1.2em;}
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 5px 20px;
+    border-radius: 10px;
+    border: 0;
+    color: white;
+    background-color: blue;
+}
+
+button:hover{ /* cuando se pone el click encima cambia de color*/
+    background-color: rgb(25, 25, 136);
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento{
+    color:blue;
+}
+
+header{
+    background-color: white;
+}
+
+header .img{
+    margin: 0;
+    padding: 25px 30px;
+}
+
+header .container{ /*Para centrar los índices del encabezado de superior de la página*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: blue;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    /*Para generar un gradiente y que haga contraste con la letra*/
+    background-image: linear-gradient(
+        90deg, 
+        rgba(64, 92, 230, 0.806),
+        rgba(184, 26, 237, 0.63)
+    )                           
+    ,url("https://images.pexels.com/photos/3769021/pexels-photo-3769021.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    color: white;
+}
+
+#soy-aprendiz .container{
+    text-align: center;
+    padding: 100px 12px;
+}
+
+#soy-aprendiz h2{
+    margin-top: 0;
+}
+
+#soy-aprendiz-{
+    background-image: linear-gradient(90deg, 
+    rgba(223, 197, 231, 0.806),
+    rgba(12, 249, 16, 0.63));
+    color: black;
+    text-align: center;
+}
+
+#soy-aprendiz- .container{
+    padding: 100px 12px;
+
+}
+
+#soy-aprendiz- p{
+    display: none;
+}
+
+#acompañantes{
+    background-color:rgba(0, 0, 0, 0.326);
+    color: white;
+    text-align: center;
+}
+
+#acompañantes .container{
+    padding: 100px 10px;
+}
+
+#acompañantes h3{
+    margin-top: 0;
+}
+
+#acompañantes .carta{
+    
+}
+
+.circular--landscape {
+    display: inline-block;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+  
+  .circular--landscape img {
+    width: 100%;
+    height: auto;
+  }
+
+#cursos {
+    background-color: rgb(35, 30, 30);
+    color: white;
+    text-align: center;
+}
+
+#cursos .container{
+    padding: 100px;
+}
+
+#cursos h2{
+    margin: 0;
+    font-size: 3em;
+}
+
+
+#cursos p{
+    display: none;
+}
+
+#cursos .carta1{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 12px;
+}
+
+.carta1:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)
+    ), url("https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-position: center center;
+    background-size: cover;
+}
+
+.carta1:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)
+    ), url("https://images.pexels.com/photos/106344/pexels-photo-106344.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-position: center center;
+    background-size: cover;
+}
+
+.carta1:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)
+    ), url("https://images.pexels.com/photos/7504824/pexels-photo-7504824.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-position: center center;
+    background-size: cover;
+}
+
+#onboarding{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    color: black;
+    height: 80vh;
+}
+
+footer{
+    background-color: rgb(230,230, 230);
+    color: rgb(100,100,100);
+}
+
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (min-width: 720px){
+
+    header{
+        position: fixed;
+        width: 100%;
+        z-index: 1000; /*Para que ningún objeto se sobreponga encima del header*/
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content:space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #hero h1{
+        font-size: 5em;
+    }
+
+    #soy-aprendiz- .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #soy-aprendiz- .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #soy-aprendiz- h2{
+        margin-top: 0px;
+    }
+
+    #soy-aprendiz- .img-container{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+            ), url("https://images.pexels.com/photos/6340665/pexels-photo-6340665.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+        background-size: cover;
+        background-position: center center;
+        height: 600px;
+        width: 500px;
+    }  
+
+    #acompañantes .programa{
+        display: flex;
+        justify-content: center;
+        gap: 300px;
+    } 
+
+    #acompañantes .carta{
+        padding: 15px;
+    }
+
+    #cursos .programas{
+        display: flex;
+        justify-content: center;
+    }
+
+    #cursos p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #cursos h3{
+        margin-top: 0;
+    }
+
+    #cursos .carta1{
+        flex: 1; /* Permite que las cartas ocupen el mismo espacio disponible */
+        padding: 20px;
+        box-sizing: border-box; 
+        border: 1px solid #ccc; 
+    }
+
+
+
+
+}
+
+
+
+
