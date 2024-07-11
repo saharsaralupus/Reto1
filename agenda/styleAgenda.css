@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+header{
+    background-color: white;
+}
+
+header .img{
+    margin: 0;
+    padding: 25px 30px;
+}
+
+header .container{ /*Para centrar los índices del encabezado de superior de la página*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: blue;
+}
+
+#calendario {
+    padding-top: 150px; /* Ajusta este valor según sea necesario */
+}
+
+#calendario .container {
+    padding: 12px;
+}
+
+@media (min-width: 720px){
+    header{
+        position: fixed;
+        width: 100%;
+        z-index: 1000; /*Para que ningún objeto se sobreponga encima del header*/
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content:space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+}
